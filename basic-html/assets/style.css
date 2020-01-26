@@ -1,0 +1,47 @@
+h1{
+	color: red;
+}
+
+
+#special{
+	color: blue;
+	font-family: sans-serif;
+}
+
+
+p {
+	color: blue;
+}
+
+a{ 
+	color: green; 
+}
+
+a{ 
+	color: rgba(255,0,255, 0.9);
+}
+
+li {
+	background-color: yellow;
+}
+
+.lightgreen {
+	background-color: rgb(8,255, 89);
+
+}
+
+
+div {
+	width: 50%
+	color: pink;
+	background-color: lightblue;
+	padding: 20px;
+	border: dashed 5px black;
+	border-width: 2px;
+	margin: 20px;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
