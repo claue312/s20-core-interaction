@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Oblique Strategies</title>
+	<link rel="stylesheet"	type="text/css" href="assets/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Cardo|Cormorant|Nanum+Myeongjo|Scheherazade&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<h1>What techniques must we acquire to enter the next level?<br>
+		What is neccessary to improve oneself?<br>
+		How do we attain personal fulfillment and success?</h1> 
+
+	
+
+  <div id="utilize">
+		<h2>Learning to utilize the power of rational thinking</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div>
+		<h2>You Can Acquire the Habit of Happiness</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div>
+		<h2>The "Success-Type" Personality</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div>
+		<h2>You can turn crisis into a Creative Opportunity!</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div class="please">
+		<h2>Learning to utilize the power of rational thinking</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div class="work">
+		<h2>You Can Acquire the Habit of Happiness</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div class="haha">
+		<h2>The "Success-Type" Personality</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	<div class="okay">
+		<h2>You can turn crisis into a Creative Opportunity!</h2><h3>It's simply a matter of work</h3>
+	</div>
+
+	
+				<script>
+				dragElement(document.getElementById("utilize"));
+
+				function dragElement(elmnt) {
+				  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+				  if (document.getElementById(elmnt.id + "header")) {
+				    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+				  } else {
+				      elmnt.onmousedown = dragMouseDown;
+				  }
+
+				  function dragMouseDown(e) {
+				    e = e || window.event;
+				    e.preventDefault();
+				    pos3 = e.clientX;
+				    pos4 = e.clientY;
+				    document.onmouseup = closeDragElement;
+				    document.onmousemove = elementDrag;
+				  }
+
+				  function elementDrag(e) {
+				    e = e || window.event;
+				    e.preventDefault();
+				    // new cursor position:
+				    pos1 = pos3 - e.clientX;
+				    pos2 = pos4 - e.clientY;
+				    pos3 = e.clientX;
+				    pos4 = e.clientY;
+				    // new position:
+				    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+				    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+				  }
+
+				  function closeDragElement() {
+				    /* release */
+				    document.onmouseup = null;
+				    document.onmousemove = null;
+				  }
+				}
+				</script>
+
+</body>
+</html>

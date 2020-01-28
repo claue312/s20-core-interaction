@@ -1,0 +1,85 @@
+body {margin: 50px;
+	  background: rgb(223, 231, 245);
+}
+
+
+h1 {font-family: sans-serif; 
+	size: 40px;
+	text-align: center;
+	color:black;
+	font-size:46px;
+	font-style:italic;
+}
+
+
+h1:hover {text-shadow: 2px 2px 5px red;
+		  color: white;
+		  transition: 0.5s; 
+ }
+
+
+h2 {font-weight: normal;
+	font-size: 40px;
+	 font-family: 'Scheherazade', sans-serif;
+	 text-align: center;
+	 font-style: italic;
+	 line-height: 35px;
+
+} 
+
+h2:hover {color: white;
+		  transition: 0.5s;
+		  text-align: center;
+ 
+}
+
+h3 {font-size: 40px;
+	text-align: center;
+	line-height: 35px;
+}
+
+
+div {border: black; 
+	 border-style: solid;
+	 width: 55%;
+	 padding: 30px;
+	 margin: auto;
+	 text-align: left;
+	 border-radius: 15px;
+	 margin-top: 25px;
+	 font-family: 'Scheherazade', sans-serif;
+	 background: white;
+
+
+ }
+
+div:hover { box-shadow: 10px 10px 5px;
+			transition: 0.5s; }
+
+.please {position: absolute;
+		 }
+
+
+
+.work {
+	   z-index: 0;}
+
+.haha {position: absolute;
+	 	z-index: 5;}
+
+.okay {z-index: 1;}
+
+#utilize {
+  position: absolute;
+  z-index: 20;
+  border: 5px solid black;
+  z-index: 10;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+
