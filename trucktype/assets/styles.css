@@ -3,9 +3,22 @@
     src:url("Iglesia.woff2") format("woff2"),url("Iglesia.woff") format("woff"),url("Iglesia.otf") format("opentype");
     font-style:normal;font-weight:400;
 }
+
+
+
+@font-face {
+    font-family:"Alte Haas Grotesk";
+    src:url("AlteHaasGroteskRegular.woff2") format("woff2"),url("AlteHaasGroteskRegular.woff") format("woff"),url("AlteHaasGroteskRegular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+   
+
         
 body {
 	margin: 4vw;
+
+
+
 }
 
 .box {
@@ -13,7 +26,8 @@ body {
 	border-color: red;
 	border: solid 10px red;
 	border-radius: 15px;
-	transform: skewY(-3deg);
+	transform: skewY(-2deg);
+
 }
 
 #seafood {
@@ -21,16 +35,16 @@ body {
 	font-size: 13vw;
 	text-align: center;
 	font-family: "Iglesia";
-	transform: skewY(-3deg);
+	transform: skewY(-2deg);
 }
 
 #limited {
 	color: red;
-	font-family: Helvetica neue;
+	font-family: "Alte Haas Grotesk";
 	font-weight: bold;
 	text-align: left;
 	font-size: 5vw;
-	transform: skewY(-3deg);
+	transform: skewY(-2deg);
 	position: absolute;
 	right: 10vw;
 	bottom: 1px;
