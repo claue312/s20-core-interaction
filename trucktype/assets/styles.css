@@ -1,0 +1,38 @@
+@font-face {
+    font-family:"Iglesia";
+    src:url("Iglesia.woff2") format("woff2"),url("Iglesia.woff") format("woff"),url("Iglesia.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
+body {
+	margin: 4vw;
+}
+
+.box {
+	border: 20px;
+	border-color: red;
+	border: solid 10px red;
+	border-radius: 15px;
+	transform: skewY(-3deg);
+}
+
+#seafood {
+	color: red;
+	font-size: 13vw;
+	text-align: center;
+	font-family: "Iglesia";
+	transform: skewY(-3deg);
+}
+
+#limited {
+	color: red;
+	font-family: Helvetica neue;
+	font-weight: bold;
+	text-align: left;
+	font-size: 5vw;
+	transform: skewY(-3deg);
+	position: absolute;
+	right: 10vw;
+	bottom: 1px;
+
+}

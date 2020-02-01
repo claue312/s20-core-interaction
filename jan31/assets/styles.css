@@ -1,0 +1,101 @@
+html, body {
+	font-size: 2vw;
+	padding: 0;
+	margin: 0;
+}
+
+.absolute {
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	background-color: black;
+	top: 50%;
+
+}
+
+
+.helplol {
+	border: 5px;
+	border-color: black;
+
+
+}
+
+
+.box {
+	position: relative;
+	display: inline-block;
+	width: 33.33%;
+	height: 2rem;
+	vertical-align: middle;
+}
+
+#menu {
+
+	position: fixed;
+	width: 100vw;
+	background-color: pink;
+	z-index: 100;
+	bottom: 20rem;
+	
+}
+
+#box1 {
+	background-color: red;
+	height: 4rem;
+}
+
+#box2 {
+	background-color: blue;
+}
+#box3 {
+
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+/*
+
+.myDiv{
+	font-size: 1rem;
+	background-color: red;
+	width: 80%;
+	height: 200px;
+	color: white;
+	padding: 20px;
+
+	margin: 20px;
+	border: solid 2px black;
+}
+
+#firstSquare {
+
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+
+#secondSquare {
+
+	margin-bottom: 40px;
+}
+
+p {
+
+	width: 80vw;
+	background-color: yellow;
+	color: black;
+
+}
+
+
+/*
+
+-rem 1 rem = defines a master size 
+
+*/*/*/
