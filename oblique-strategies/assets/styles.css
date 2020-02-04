@@ -1,85 +1,78 @@
-body {margin: 50px;
-	  background: rgb(223, 231, 245);
+
+@font-face {
+    font-family:"UniversLTStd";
+    src:url("UniversLTStd.woff2") format("woff2"),url("UniversLTStd.woff") format("woff"),url("UniversLTStd.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
+body {margin: 5vw;
+	  background: inherit;
 }
 
 
-h1 {font-family: sans-serif; 
-	size: 40px;
-	text-align: center;
-	color:black;
-	font-size:46px;
-	font-style:italic;
+#marquee {
+	color:red;
+	font-size: 10vw;
+	font-weight: bold;
+	font-family: "UniversLTStd";
+	text-align: left;
+	color:red;
+	padding-bottom: 2vw;
+	transform-style: preserve-3d;
+  	transform: rotateX(60deg) rotateY(5deg);
+  	margin: none;
+  	text-shadow: 2px 2px black;
+
+}
+
+.box {
+	border-style: dashed;
+	border-color: black;
+	color: black;
+	height: 30vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4vw;
+}
+
+.box:hover {
+	font-weight: bold;
+
+
 }
 
 
-h1:hover {text-shadow: 2px 2px 5px red;
-		  color: white;
-		  transition: 0.5s; 
+
+.replies {
+	text-transform: uppercase;
+}
+
+button {
+	width: 85vw;
+	font-family: "UniversLTStd";
+	font-size: 10vw;
+}
+
+
+button .comment { 
+	display: none; 
+}
+
+button:hover .replies { 
+	display: none;
+
+
+
+}
+
+button:hover .comment {
+ 	display: inline; 
+ 	font-weight: normal;
+ 	font-size: 3vw;
+
  }
+.box:hover {
+	box-shadow: 10px 10px black;
 
-
-h2 {font-weight: normal;
-	font-size: 40px;
-	 font-family: 'Scheherazade', sans-serif;
-	 text-align: center;
-	 font-style: italic;
-	 line-height: 35px;
-
-} 
-
-h2:hover {color: white;
-		  transition: 0.5s;
-		  text-align: center;
- 
 }
-
-h3 {font-size: 40px;
-	text-align: center;
-	line-height: 35px;
-}
-
-
-div {border: black; 
-	 border-style: solid;
-	 width: 55%;
-	 padding: 30px;
-	 margin: auto;
-	 text-align: left;
-	 border-radius: 15px;
-	 margin-top: 25px;
-	 font-family: 'Scheherazade', sans-serif;
-	 background: white;
-
-
- }
-
-div:hover { box-shadow: 10px 10px 5px;
-			transition: 0.5s; }
-
-.please {position: absolute;
-		 }
-
-
-
-.work {
-	   z-index: 0;}
-
-.haha {position: absolute;
-	 	z-index: 5;}
-
-.okay {z-index: 1;}
-
-#utilize {
-  position: absolute;
-  z-index: 20;
-  border: 5px solid black;
-  z-index: 10;
-  text-align: center;
-}
-
-#mydivheader {
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-}
-
