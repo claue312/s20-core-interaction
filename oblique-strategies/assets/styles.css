@@ -52,11 +52,14 @@ button {
 	width: 85vw;
 	font-family: "UniversLTStd";
 	font-size: 10vw;
+	background-color: white;
+
 }
 
 
 button .comment { 
 	display: none; 
+	background-color: white;
 }
 
 button:hover .replies { 
@@ -70,6 +73,7 @@ button:hover .comment {
  	display: inline; 
  	font-weight: normal;
  	font-size: 3vw;
+
 
  }
 .box:hover {
