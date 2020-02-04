@@ -27,7 +27,9 @@ body {margin: 5vw;
 
 .box {
 	border-style: dashed;
+	border-width: 3px;
 	border-color: black;
+	border-radius: 8px 8px 8px;
 	color: black;
 	height: 30vw;
 	display: flex;
@@ -48,12 +50,15 @@ body {margin: 5vw;
 	text-transform: uppercase;
 }
 
+
+
 button {
 	width: 85vw;
 	font-family: "UniversLTStd";
 	font-size: 10vw;
 	background-color: white;
-
+	border-style: dashed;
+	border-color: black;
 }
 
 
@@ -71,7 +76,11 @@ button:hover .replies {
 button:hover .comment {
  	display: inline; 
  	font-weight: normal;
- 	font-size: 3vw;
+ 	font-size: 5vw;
+ 	text-decoration: underline;
+ 	font-style: italic;
+
+
 
 
  }

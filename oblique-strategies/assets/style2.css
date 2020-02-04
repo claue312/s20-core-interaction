@@ -1,0 +1,49 @@
+body {
+  margin: 3vw;
+}
+
+
+
+
+#myRandomDiv {
+  display: none;
+  color: red;
+  border-style: dotted;
+  text-align: center;
+  width: 90vw;
+  height: 20vw;
+  font-size: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica Neue;
+}
+
+#myRandomDiv:hover {
+
+  color:black;
+  display: none;
+}
+
+#brand {
+  text-align: center;
+  font-family: Helvetica Neue;
+}
+
+button {
+  color: black;
+  background-color: white;
+  width: 50vw;
+  height: 15vw;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  text-align: center;
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  font-family: Helvetica Neue;
+  font-size: 25px;
+}
+ 
