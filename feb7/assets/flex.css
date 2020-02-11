@@ -1,0 +1,29 @@
+body {
+	background-color: skyblue;
+}
+
+
+
+
+.parent {
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: stretch;
+
+
+}
+
+.child {
+	padding: 1rem;
+	background-color: beige;
+	color: white;
+	margin: 1rem;
+	color: black;
+}
+
+.child:nth-of-type(even){
+	background-color: blue;
+	color: beige;
+}

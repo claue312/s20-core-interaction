@@ -1,0 +1,85 @@
+html, body{
+
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+
+}
+
+.myLink {
+	color: pink;
+	font-size: 2rem;
+	padding: 1rem;
+	transition: background-color 0.5s ease-out;
+}
+
+.pink:hover {
+	color: pink;
+}
+
+.pink:focus {
+	color: pink;
+}
+
+.pink:focus {
+	color: pink;
+}
+
+
+button {
+  background: inherit;
+  font-family: helvetica neue;
+}
+
+button:active {
+	background-color: blue;
+}
+
+
+
+
+.myLink:visited {
+	background-color: pink;
+}
+
+.myLink:hover {
+	background-color: blue;
+}
+
+.myLink:active {
+	background-color: green;
+}
+
+.myParagraph {
+	font-size: 2rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+
+.myParagraph:nth-of-type(even ){
+	background-color: pink;
+}
+
+.myParagraph:first-of-type{
+	border: dashed .1rem blue;
+}
+
+.myParagraph:nth-of-type(odd){
+	border: dotted .2rem magenta;
+}
+
+.myParagraph:nth-of-type(4){
+	border: dotted .5rem green;
+}
+
+.myParagraph:nth-of-type(even){
+	border: dotted .5rem green;
+}
+
+.myParagraph:not(#special){
+	font-style: italic;
+	font-family: Arial;
+}
+
+/*rem references the font size set for the body*/
