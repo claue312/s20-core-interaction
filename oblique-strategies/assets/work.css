@@ -4,13 +4,13 @@ body {margin: 4vw;
 
 
 
-p {
-	font-size: 10vw;
+.results {
+	font-size: 9vw;
 	font-family: Helvetica Neue;
-	line-height: 10vw;
+	line-height: 9vw;
 }
 
-p:hover {text-shadow: 1vw 1vw 1vw;
+.results:hover {text-shadow: 1vw 1vw 1vw;
 	 	transition: all 1.5s ease-in;
   		transform: rotate(-15deg);
 }
