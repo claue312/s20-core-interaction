@@ -3,15 +3,12 @@
 <body onload="myFunction()" style="margin:0;">
 <link rel="stylesheet" type="text/css" href="assets/work.css">
 
-  
 <div id="loader"></div>
 
-<div style="display:none;" id="results" class="animate-bottom">
-
-<div id="results">
-<p>Your results:<br>It's simply a matter of work!</p>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <p>Your Results:<br>It's Simply A<br> Matter of Work!</p>
+  <p></p>
 </div>
-
 
 
 
@@ -26,8 +23,9 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("results").style.display = "block";
+  document.getElementById("myDiv").style.display = "block";
 }
 </script>
+
 </body>
 </html>

@@ -1,19 +1,5 @@
-body {margin: 4vw; 
-	  margin-top: -4vw;
+body {margin: auto;
 	}
-
-
-
-#results {
-	font-size: 9vw;
-	font-family: Helvetica Neue;
-	line-height: 9vw;
-	text-shadow: 1vw 1vw 1vw;
-	 	transition: all 1.5s ease-in;
-  		transform: rotate(-15deg);
-}
-
-/* Center the loader */
 #loader {
   position: absolute;
   left: 50%;
@@ -24,7 +10,7 @@ body {margin: 4vw;
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid black;
+  border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -60,7 +46,12 @@ body {margin: 4vw;
   to{ bottom:0; opacity:1 }
 }
 
-#results {
+#myDiv {
   display: none;
   text-align: center;
+  font-size: 8vw;
+  font-family: Helvetica Neue;
+  text-shadow: 1vw 1vw 1vw;
+  font-weight: normal;
+
 }
