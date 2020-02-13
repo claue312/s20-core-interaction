@@ -90,6 +90,7 @@ input[type=checkbox] {
 .myForm:focus {
   background-color: white;
   color: blue;
+  text-transform: u
 }
 
   .buttonAlert  {
