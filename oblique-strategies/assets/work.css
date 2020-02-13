@@ -2,7 +2,7 @@ body {margin: 4vw;
 	  margin-top: -4vw;
 	}
 
-
+/*
 
 .results {
 	font-size: 9vw;
@@ -13,7 +13,7 @@ body {margin: 4vw;
 .results:hover {text-shadow: 1vw 1vw 1vw;
 	 	transition: all 1.5s ease-in;
   		transform: rotate(-15deg);
-}
+}*/
 
 /* Center the loader */
 #loader {
