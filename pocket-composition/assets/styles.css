@@ -34,8 +34,8 @@ body:hover {
 	height: 30vw;
 	position: relative;
 	display: inline-block;
-	background-color: #006A41; 
 	margin: 3vw;
+	background-color: #006A41; 
 	margin-top: 15.5vw;
 	transform:rotate(-30deg);
 	z-index: 1;
