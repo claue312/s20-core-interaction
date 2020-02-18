@@ -1,0 +1,49 @@
+/*body {
+	margin: 2vw;}
+
+
+
+.times {
+	font-family: Times New Roman;
+	font-stretch: extra-condensed;
+	font-size: 6vw;
+	line-height: 3vw;
+	margin: auto;
+}
+
+
+p:hover {
+	text-decoration: underline;
+}
+*/
+
+p:hover {
+	text-decoration: underline;
+	color:red;
+	}
+
+
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+body { overflow: visible; height: 100%; }
+
+.times {
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    animation: slider linear infinite;
+    font-size: 5vw;
+    line-height: 7vw;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.times li { line-height: 50px; width: 100vw; } 
+
+@keyframes slider {
+    0%   { transform: translateY(100vh) }
+    100% { transform: translateY(-100%) }
+}
+
+
+

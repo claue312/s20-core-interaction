@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	<title>Clock</title>
+</head>
+<body>
+
+<div class="times">	
+	<p>Midnight</p>
+	<p>Twelve fifteen</p>
+	<p>Half past twelve</p>
+	<p>Quarter til one</p>
+	<p>One O'Clock</p>
+	<p>Quarter past one</p>
+	<p>One thirty in the morning</p>
+	<p>Twelve thirty AM</p>
+	<p>Two in the morning</p>
+	<p>Quarter past two</p>
+	<p>Half past two</p>
+	<p>Two forty-five</p>
+	<p>Three in the morning</p>
+	<p>Three fifteen</p>
+	<p>Three thirty AM</p>
+	<p>Quarter til four</p>
+	<p>Four in the morning</p>
+	<p>Four fifteen</p>
+	<p>Four thirty AM</p>
+	<p>Four forty five in the morning</p>
+	<p>Five AM</p>
+	<p>Quarter past five</p>
+	<p>Five thirty</p>
+	<p>Five forty five AM</p>
+	<p>Six in the morning</p>
+	<p>Six fifteen in the morning</p>
+	<p>Six thirty AM</p>
+	<p>Quarter til Seven</p>
+	<p>Seven in the morning</p>
+	<p>Seven fifteen AM</p>
+	<p>Seven thirty in the morning</p>
+	<p>Seven forty five</p>
+	<p>Eight in the morning</p>
+	<p>Quarter past eight</p>
+	<p>Eight thirty AM</p>
+	<p>Quarter til Nine</p>
+	<p>Nine in the morning</p>
+	<p>Nine fifteen</p>
+	<p>Half past Nine</p>
+	<p>Nine forty five</p>
+	<p>Ten in the morning</p>
+	<p>Quarter past ten</p>
+	<p>Half past ten</p>
+	<p>Ten til Eleven</p>
+	<p>Eleven in the morning</p>
+	<p>Eleven fifteen</p>
+	<p>Half past Eleven</p>
+	<p>Quarter til Noon</p>
+	
+
+</div>
+
+<script type="text/javascript">
+	window.onload = function() {
+var lineHeight = document.querySelector(".times p").clientHeight;
+var viewHeight = window.innerHeight;
+var slider = document.querySelector(".times");
+var time = (slider.offsetHeight * 2.0 + viewHeight * 2) / 50.0; // 500px / sec
+
+slider.style.animationDuration = time + "s";
+}
+</script>
+</body>
+</html>
