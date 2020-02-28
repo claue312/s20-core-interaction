@@ -31,7 +31,7 @@ th, td {
   display: inline-block;
   border: 1px solid black;
   border-radius: 1vw 1vw 1vw 1vw;
-  font-size: 1.6vw;
+  font-size: 1.45vw;
   font-family: Helvetica Neue;
   margin: 1vw;
 /*  float: left;*/
@@ -47,7 +47,7 @@ th, td:hover {
   display: float;
   color: black;
   border-style: dashed;
-  border-color: blue;
+  border-color: black;
   text-decoration: none;
   transition: background-color, box-shadow 0.8s;
   background: #d5dadb;
@@ -58,7 +58,6 @@ th, td:hover {
   width: 15vw;
   height: 15wv;
   transition: all 1.5s ease-in-out;
-  transform: rotate(-35deg);
   z-index: 100;
  
 }

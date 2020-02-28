@@ -1,24 +1,26 @@
-// comments!
+/* comments
+	- february 14
+	- core lab
+ */
 
-// comment
+// this is also a comment
 
 // Variables
 
-// Strings
+// strings
 
-
-var greeting = 'hello';
-	greeting = greeting + ' hows it goin';
+var greeting = 'hello!';
+greeting = greeting + ' how are you doing?';
 
 // numbers
 
 var week = -4.2;
-week = week*2;
-week = week/2;
-week = week + 2;
-week = week * (2+6);
-week = week -1;
 
+week = week * 2;
+week = week / 2;
+week = week + 2;
+week = week * (2 + 6);
+week = week - 1;
 var weeklyGreeting = greeting + " " + week;
 
 console.log(greeting, week, weeklyGreeting);
@@ -26,73 +28,69 @@ console.log(greeting, week, weeklyGreeting);
 var time = 44;
 var output = time + "rem"; // 44rem
 
-// '4' !== 4 
+// '4' !== 4
 
-// Booleans
+// booleans
 
 var open = false;
 var closed = true;
 
 console.log(open);
 
-// Arrays 
-//Array is a list
-
+// arrays
+// array is a list:
 var myArray = ['apples', 'oranges', 'pears', 4];
 
 console.log(myArray[1]);
 
-// Objects
-
+// objects
+// objects are collections:
 var myObject = {
-	code: "fun",
-	class: "even more fun",
+	code : "fun",
+	class : "even more fun",
 	list : ["string", "another", "string"]
-
 };
 
-console.log (myObject.class);
+console.log(myObject.class);
 
-
-/* Conditionals */ 
+/* Conditionals */
 
 var smallNumber = 50,
-	name = 'Erin',
-	hairColor = "Brown";
-
+	name = "Lukas",
+	hairColor = "Blonde";
 
 // == is an approx. equal sign
 // === absolutely equal
-// > and >= 
-// < and <= 
-// !== 
+// > and >=
+// < and <=
+// != approximate not equal to
 // !== absolute not equal to
+
 // && (and) can be used to combine conditions
-// || (or)
+// || (or) either condition can be true
 
-if(smallNumber === 50 || name !== 'Erin'){
-
-	if(name === 'Erin'){
-		name = name + 'McGee';
-
-}
+if(smallNumber === 50 || name !== 'Lukas'){
+	
+	if(name === 'Lukas'){
+		name = name + ' Eigler-Harding';
+	}
 
 	console.log(name)
 
-
-}else if(hairColor === 'Brown'){
+}else if(hairColor === 'Blonde'){
 
 	console.log(hairColor)
-
 
 }else{
 	// default
 	console.log(hairColor, name)
 }
 
+
+
 /* DOM Selection */
 
-// Document Selection Model
+// Document Object Model
 
 var loft = document.getElementById("tribeca-loft");
 console.log(loft)
@@ -104,26 +102,38 @@ console.log(firstWindow);
 console.log(allWindows);
 
 
-/* Dom Manipulation */
+/* DOM Manipulation */
 
-// ad or remove a class
+// add or remove a class
 
-if(loft.classList.add("night")){
+/*
+
+	check if the loft has the class night
+
+	if the loft has the class night: take it away
+
+	if the loft doesnt have the class night: add it
+
+*/
+
+if(loft.classList.contains("night")){
 	loft.classList.remove("night");
-
 }else{
 	loft.classList.add("night");
 }
 
+
 //inline styles:
-
-/* cssc: 
-#tribeca-loft{
-	
-
-} */
-
 loft.style.borderTop = "solid 1rem pink";
+
+/*
+css:
+#tribeca-loft{
+	border-top: ;
+}
+
+*/
+
 
 setTimeout(function(){
 	// anything in here happens after 1 second:
@@ -134,7 +144,6 @@ setTimeout(function(){
 
 var roofHeight = 1;
 
-
 setInterval(function(){
 
 	loft.style.borderTop = "solid " + roofHeight + "rem red";
@@ -142,8 +151,6 @@ setInterval(function(){
 	roofHeight = roofHeight + 1;
 
 }, 1000)
-
-
 
 
 

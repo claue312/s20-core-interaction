@@ -19,7 +19,7 @@ body:hover {
 
 /*Blocks are below*/
 
-.daddy {
+#daddy {
 
 	width: 90vw;
 	height: 224.5vw;
@@ -35,16 +35,16 @@ body:hover {
 	position: relative;
 	display: inline-block;
 	margin: 3vw;
-	background-color: #006A41; 
-	margin-top: 15.5vw;
+/*	background-color: #006A41; 
+*/	margin-top: 15.5vw;
 	transform:rotate(-30deg);
 	z-index: 1;
 
 }
 
-.mommy1:hover {
+/*.mommy1:hover {
 	background-color: #BACBC1;
-}
+}*/
 .mommy2:hover {
 	background-color: blue;
 }

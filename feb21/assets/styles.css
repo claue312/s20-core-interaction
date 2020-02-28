@@ -1,0 +1,20 @@
+body, html {
+	color: red;
+	font-size: 2vw;
+}
+
+
+#square {
+	border-style: dashed;
+	width: 5rem;
+	height: 5rem;
+	transition: background-color 8s;
+}
+
+.circle {
+	border: dotted 10px black;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 2.5rem;
+	box-sizing: border-box;
+}

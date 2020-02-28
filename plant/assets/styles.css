@@ -1,0 +1,117 @@
+html, body{
+	padding:0;
+	margin: 0 auto;
+	background-color: white;
+
+
+}
+
+
+.ground{
+	position: fixed;
+	background-color: #03793E;
+	width: 100%;
+	height: 5vw;
+	bottom: 0;
+
+}
+
+
+#stem1{
+	position: fixed;
+    bottom: 0;
+	margin: 0 auto;
+	background-color: pink;
+	border-style: solid;
+	border-color: #03793E;
+	width: 5vw;
+	border-width: .5vw;
+	height: 10vw;
+	left: 10vw;
+	border-radius: 10vw;
+	box-sizing: border-box;
+	
+}
+
+
+
+#stem2{
+	position: fixed;
+    bottom: 0;
+	margin: 0 auto;
+	background-color: pink;
+	border-style: solid;
+	border-color: #03793E;
+	width: 5vw;
+	border-width: .5vw;
+	height: 10vw;
+	left: 20vw;
+	border-radius: 10vw;
+	box-sizing: border-box;
+	
+}
+
+
+
+#stem3{
+	position: fixed;
+    bottom: 0;
+	margin: 0 auto;
+	background-color: pink;
+	border-style: solid;
+	border-color: #03793E;
+	width: 5vw;
+	border-width: .5vw;
+	height: 10vw;
+	left: 30vw;
+	border-radius: 10vw;
+	box-sizing: border-box;
+	
+}
+
+
+
+#stem4{
+	position: fixed;
+    bottom: 0;
+	margin: 0 auto;
+	background-color: pink;
+	border-style: solid;
+	border-color: #03793E;
+	width: 5vw;
+	border-width: .5vw;
+	height: 10vw;
+	left: 40vw;
+	border-radius: 10vw;
+	box-sizing: border-box;
+	
+}
+
+
+#stem5{
+	position: fixed;
+    bottom: 0;
+	margin: 0 auto;
+	background-color: pink;
+	border-style: solid;
+	border-color: #03793E;
+	width: 5vw;
+	border-width: .5vw;
+	height: 10vw;
+	left: 50vw;
+	border-radius: 10vw;
+	box-sizing: border-box;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
