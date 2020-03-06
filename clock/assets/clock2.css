@@ -4,6 +4,76 @@
     font-style:normal;font-weight:400;
 }
 
+body {
+	background-color: white;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 20vw;
+	display: inline-block;
+
+	
+}
+
+
+
+.container2 {
+	width: 20vw;
+	background-color: #E9E9E9;
+	height: 13vw;
+	border-style: solid;
+	border-color: black;
+	margin: 0 auto;
+	border-width: 2px;
+	box-shadow: 5px 10px 10px #888888;
+	display: inline-block;
+
+
+
+}
+
+
+.container3 {
+	width: 20vw;
+	background-color: #E9E9E9;
+	height: 13vw;
+	border-style: solid;
+	border-color: black;
+	margin-right: 40vw;
+	border-width: 2px;
+	display: inline-block;
+	box-shadow: 5px 10px 10px #888888;
+
+}
+	
+.container4 {
+	width: 20vw;
+	background-color: #E9E9E9;
+	height: 13vw;
+	border-style: solid;
+	border-color: black;
+	margin-left: 40vw;
+	border-width: 2px;
+	box-shadow: 5px 10px 10px #888888;
+	position: absolute;
+}
+
+}
+
+
+.container { 
+	/*clip-path:inset(1% 1% 1% 1%);
+	clip-path-position: fixed;	*/
+	width: 30vw;
+	height: 13vw;
+	margin: 0 auto;
+/*	overflow: hidden; */
+	display: inline-block;
+	}
+
+
+
+
+
 
 
 .times {
@@ -12,39 +82,13 @@
     list-style-type: none;
     animation: slider linear infinite;
     font-size: 7.5vw;
-    line-height: 9vw;  
-	padding-left: 4vw;
+    line-height: 2vw;  
+
+	text-align: center;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
 	color: white;
-	clip-path: rect(10px, 20px, 30px, 40px);
-	outline:100vw solid white;
-
-
-
-
 }
-
-
-}
-
-
-
-
-p:hover {
-	color: black;
-
-
-
-}
-  	
-
-
-
-
-* { padding: 0; margin: 0; box-sizing: border-box; }
-body { overflow: visible; height: 100%; }
-
 
 
 .times li { line-height: 50px; width: 100vw;
@@ -54,40 +98,4 @@ body { overflow: visible; height: 100%; }
     0%   { transform: translateY(100vh) }
     100% { transform: translateY(-100%) }
 }
-
-
-.box {
-	width: 93vw;
-	margin-top: 20vw;
-	margin-left: 3vw;
-	border-style: solid;
-	border-width: .2vw;
-	position: fixed; 
-	height: 9vw;
-	clip: rect(93vw, 9vw);
-
-	z-index: 100;
-	box-shadow: 2px 1px 5px;
-
-}
-
-
-
-
-
-
-
-/*.box2 {
-	width: 30vw;
-	height: 7vw;
-	border-width: .1vw;
-	border-radius: 3vw 3vw 3vw 3vw;
-	position: fixed;
-	border-style: dashed;
-	margin-bottom: -98vw;
-	z-index: 
-}
-
-*/
-
 

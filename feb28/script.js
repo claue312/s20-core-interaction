@@ -54,8 +54,6 @@ function clock(){
 	timeUnit(currentDate.getMinutes(), minutes)
 	timeUnit(currentDate.getSeconds(), seconds)
 
-
-
 }
 
 

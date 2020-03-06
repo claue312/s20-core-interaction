@@ -2,131 +2,127 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="assets/clock2.css">
-	<title>Clock</title>
+<title>Clock</title>
 </head>
+
 <body>
-	<div id="clock">
-		<div class="label"></div>
-		<div id="current-time"></div>
-	</div>
+	
+	<h1>
+		<span id="hours">00</span
+		>:<span id="minutes">00</span
+		>:<span id="seconds">00</span
+		>:<span id="milliseconds">00</span>
+	</h1>
 
-
-
-
-<div class="box">
-	<div class="box2"></div>
-</div>
-<div class="times">	
-	<p>Midnight</p>
-	<p>Twelve fifteen</p>
-	<p>Half past twelve</p>
-	<p>Quarter til one</p>
-	<p>One O'Clock</p>
-	<p>Quarter past one</p>
-	<p>One thirty in the morning</p>
-	<p>Twelve thirty AM</p>
-	<p>Two in the morning</p>
-	<p>Quarter past two</p>
-	<p>Half past two</p>
-	<p>Two forty-five</p>
-	<p>Three in the morning</p>
-	<p>Three fifteen</p>
-	<p>Three thirty AM</p>
-	<p>Quarter til four</p>
-	<p>Four in the morning</p>
-	<p>Four fifteen</p>
-	<p>Four thirty AM</p>
-	<p>Four forty five in the morning</p>
-	<p>Five AM</p>
-	<p>Quarter past five</p>
-	<p>Five thirty</p>
-	<p>Five forty five AM</p>
-	<p>Six in the morning</p>
-	<p>Six fifteen in the morning</p>
-	<p>Six thirty AM</p>
-	<p>Quarter til Seven</p>
-	<p>Seven in the morning</p>
-	<p>Seven fifteen AM</p>
-	<p>Seven thirty in the morning</p>
-	<p>Seven forty five</p>
-	<p>Eight in the morning</p>
-	<p>Quarter past eight</p>
-	<p>Eight thirty AM</p>
-	<p>Quarter til Nine</p>
-	<p>Nine in the morning</p>
-	<p>Nine fifteen</p>
-	<p>Half past Nine</p>
-	<p>Nine forty five</p>
-	<p>Ten in the morning</p>
-	<p>Quarter past ten</p>
-	<p>Half past ten</p>
-	<p>Ten til Eleven</p>
-	<p>Eleven in the morning</p>
-	<p>Eleven fifteen</p>
-	<p>Half past Eleven</p>
-	<p>Quarter til Noon</p>
-	<p>Twelve in the afterenoon</p>
-	<p>Quarter past Noon</p>
-	<p>Half past twleve</p>
-	<p>Quarter til One</p>
-	<p>One in the afternoon</p>
-	<p>Quarter past One</p>
-	<p>One thirty in the afternoon</p>
-	<p>Quarter til Two</p>
-	<p>Two fifteen</p>
-	<p>Half past two</p>
-	<p>Two forty five</p>
-	<p>Three in the afternoon</p>
-	<p>Quarter past three</p>
-	<p>Three thirty</p>
-	<p>Quarter til four</p>
-	<p>Four in the afternoon</p>
-	<p>Four fifteen</p>
-	<p>Four thirty PM</p>
-	<p>Four forty five in the afternoon</p>
-	<p>Five PM</p>
-	<p>Quarter past five</p>
-	<p>Five thirty</p>
-	<p>Five forty five PM</p>
-	<p>Six in the evening</p>
-	<p>Six fifteen in the evening/p>
-	<p>Six thirty PM</p>
-	<p>Quarter til Seven</p>
-	<p>Seven in the evening</p>
-	<p>Seven fifteen PM</p>
-	<p>Seven thirty in the evening</p>
-	<p>Seven forty five</p>
-	<p>Eight in the evening</p>
-	<p>Quarter past eight</p>
-	<p>Eight thirty PM</p>
-	<p>Quarter til Nine</p>
-	<p>Nine in the evening</p>
-	<p>Nine fifteen</p>
-	<p>Half past Nine</p>
-	<p>Nine forty five</p>
-	<p>Ten in the evening</p>
-	<p>Quarter past ten</p>
-	<p>Half past ten</p>
-	<p>Ten til Eleven</p>
-	<p>Eleven in the evening</p>
-	<p>Eleven fifteen</p>
-	<p>Half past Eleven</p>
-
-
-
+	<h2>Day of Month: <span id="monthday"></span></h2>
+	<h2>Day of Week: <span id="weekday"></span></h2>
 	
 
-</div>
-
-<script type="text/javascript">
-	window.onload = function() {
-var lineHeight = document.querySelector(".times p").clientHeight;
-var viewHeight = window.innerHeight;
-var slider = document.querySelector(".times");
-var time = (slider.offsetHeight * 2.0 + viewHeight * 2) / 50.0; // 500px / sec
-
-slider.style.animationDuration = time + "s";
-}
-</script>
+	
+<span id="hours">00</span
+		>:<span id="minutes">00</span
+		>
+	<div class="times">	
+		<p>Midnight</p>
+		<p>Twelve fifteen</p>
+		<p>Half past twelve</p>
+		<p>Quarter til one</p>
+		<p>One O'Clock</p>
+		<p>Quarter past one</p>
+		<p>One thirty in the morning</p>
+		<p>Twelve thirty AM</p>
+		<p>Two in the morning</p>
+		<p>Quarter past two</p>
+		<p>Half past two</p>
+		<p>Two forty-five</p>
+		<p>Three in the morning</p>
+		<p>Three fifteen</p>
+		<p>Three thirty AM</p>
+		<p>Quarter til four</p>
+		<p>Four in the morning</p>
+		<p>Four fifteen</p>
+		<p>Four thirty AM</p>
+		<p>Four forty five in the morning</p>
+		<p>Five AM</p>
+		<p>Quarter past five</p>
+		<p>Five thirty</p>
+		<p>Five forty five AM</p>
+		<p>Six in the morning</p>
+		<p>Six fifteen in the morning</p>
+		<p>Six thirty AM</p>
+		<p>Quarter til Seven</p>
+		<p>Seven in the morning</p>
+		<p>Seven fifteen AM</p>
+		<p>Seven thirty in the morning</p>
+		<p>Seven forty five</p>
+		<p>Eight in the morning</p>
+		<p>Quarter past eight</p>
+		<p>Eight thirty AM</p>
+		<p>Quarter til Nine</p>
+		<p>Nine in the morning</p>
+		<p>Nine fifteen</p>
+		<p>Half past Nine</p>
+		<p>Nine forty five</p>
+		<p>Ten in the morning</p>
+		<p>Quarter past ten</p>
+		<p>Half past ten</p>
+		<p>Quarter til Eleven</p>
+		<p>Eleven in the morning</p>
+		<p>Eleven fifteen</p>
+		<p>Half past Eleven</p>
+		<p>Quarter til Noon</p>
+		<p>Twelve fifteen</p>
+		<p>Half past twelve</p>
+		<p>Quarter til one</p>
+		<p>One O'Clock</p>
+		<p>Quarter past one</p>
+		<p>One thirty in the afternoon</p>
+		<p>Twelve thirty PM</p>
+		<p>Two in the afternoon</p>
+		<p>Quarter past two</p>
+		<p>Half past two</p>
+		<p>Two forty-five</p>
+		<p>Three in the afternoon</p>
+		<p>Three fifteen</p>
+		<p>Three thirty PM</p>
+		<p>Quarter til four</p>
+		<p>Four in the afternoon</p>
+		<p>Four fifteen</p>
+		<p>Four thirty PM</p>
+		<p>Half past four</p>
+		<p>Five PM</p>
+		<p>Quarter past five</p>
+		<p>Five thirty</p>
+		<p>Five forty five PM</p>
+		<p>Six in the evening</p>
+		<p>Quarter past six</p>
+		<p>Six thirty PM</p>
+		<p>Quarter til Seven</p>
+		<p>Seven in the evening</p>
+		<p>Seven fifteen</p>
+		<p>Seven thirty in the evening</p>
+		<p>Seven forty five</p>
+		<p>Eight in the evening</p>
+		<p>Quarter past eight</p>
+		<p>Eight thirty at night</p>
+		<p>Quarter til Nine</p>
+		<p>Nine at night</p>
+		<p>Nine fifteen</p>
+		<p>Half past Nine</p>
+		<p>Nine forty five</p>
+		<p>Ten in the evening</p>
+		<p>Quarter past ten</p>
+		<p>Ten thirty at night</p>
+		<p>Quarter til Eleven</p>
+		<p>Eleven O'Clock</p>
+		<p>Eleven fifteen</p>
+		<p>Half past Eleven</p>
+		<p>Eleven forty five</p>
+	</div>
+		</div>
+		</div>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ -->
+<script type="text/javascript" src="assets/clock2.js"></script>
 </body>
 </html>
