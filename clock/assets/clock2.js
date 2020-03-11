@@ -1,14 +1,12 @@
 
-
-
 let times = document.getElementById("times")
 
-// Delay time loading so it can run time check function first
+// Delay
 setTimeout(function() {
   times.style.opacity = '1';
 }, 1000);
 
-// Round time to see what quarter hour we are nearest
+// Round nearest .25 hour
 let roundTime = (hours, minutes, minutesToRound) => {
 
   // Convert hours and minutes to minutes
@@ -27,10 +25,9 @@ let changeTime = () => {
     hours = d.getHours(),
     minutes = d.getMinutes();
 
-  // Round time to 15 minutes using function above
+  // Round time to 15 minutes using changeTime
   let roundedTime = roundTime(hours, minutes, 15)
 
-  // Find element that matches the current time
   let currentTime = document.querySelectorAll("[data-time='" + roundedTime + "']")[0]
 
   if (!!currentTime) {
@@ -44,5 +41,4 @@ let changeTime = () => {
 
 // Run above on page load
 changeTime();
-// Create interval to only run every 10 seconds
 setInterval(changeTime, 10000);
