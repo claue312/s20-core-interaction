@@ -1,22 +1,4 @@
-// // total height of time section
-// 	var times = document.getElementById("times")
-// 	var timesTotalHeight = times.offsetHeight;
-// 	// var delay = times.keyframes.timesTotalHeight;
-	
-// 	setInterval(function(){
-// 		var myDate = new Date;
-// 		var hoursInSeconds = myDate.getHours()*60*60;
-// 		var minutesInSeconds = myDate.getMinutes()*60;
-// 		var seconds = myDate.getSeconds() + minutesInSeconds + hoursInSeconds;
 
-// //time is sped up x10 
-// 		var percentage = seconds;
-// 		console.log(percentage)
-		
-
-// 		times.style.height =  Math.round(timesTotalHeight * percentage) + "px";
-
-// 	}, 1000)
 
 
 let times = document.getElementById("times")
