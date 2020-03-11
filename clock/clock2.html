@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="assets/clock2.css">
-<title>Clock</title>
-</head>
-<body>
-	
-	<div class="container2">
-	<div class="container">
-		<div id="times">	
-		<p>Midnight</p>
-		<p>Twelve fifteen</p>
-		<p>Half past twelve</p>
-		<p>Quarter til one</p>
-		<p>One O'Clock</p>
-		<p>Quarter past one</p>
-		<p>One thirty in the morning</p>
-		<p>Twelve thirty AM</p>
-		<p>Two in the morning</p>
-		<p>Quarter past two</p>
-		<p>Half past two</p>
-		<p>Two forty-five</p>
-		<p>Three in the morning</p>
-		<p>Three fifteen</p>
-		<p>Three thirty AM</p>
-		<p>Quarter til four</p>
-		<p>Four in the morning</p>
-		<p>Four fifteen</p>
-		<p>Four thirty AM</p>
-		<p>Four forty five in the morning</p>
-		<p>Five AM</p>
-		<p>Quarter past five</p>
-		<p>Five thirty</p>
-		<p>Five forty five AM</p>
-		<p>Six in the morning</p>
-		<p>Six fifteen in the morning</p>
-		<p>Six thirty AM</p>
-		<p>Quarter til seven</p>
-		<p>Seven in the morning</p>
-		<p>Seven fifteen AM</p>
-		<p>Seven thirty in the morning</p>
-		<p>Seven forty five</p>
-		<p>Eight in the morning</p>
-		<p>Quarter past eight</p>
-		<p>Eight thirty AM</p>
-		<p>Quarter til nine</p>
-		<p>Nine in the morning</p>
-		<p>Nine fifteen</p>
-		<p>Half past nine</p>
-		<p>Nine forty five</p>
-		<p>Ten in the morning</p>
-		<p>Quarter past ten</p>
-		<p>Half past ten</p>
-		<p>Quarter til eleven</p>
-		<p>Eleven in the morning</p>
-		<p>Eleven fifteen</p>
-		<p>Half past eleven</p>
-		<p>Quarter til noon</p>
-		<p>Twelve O'Clock</p>
-		<p>Twelve fifteen</p>
-		<p>Half past twelve</p>
-		<p>Quarter til one</p>
-		<p>One O'Clock</p>
-		<p>Quarter past one</p>
-		<p>One thirty in the afternoon</p>
-		<p>Twelve thirty PM</p>
-		<p>Two in the afternoon</p>
-		<p>Quarter past two</p>
-		<p>Half past two</p>
-		<p>Two forty-five</p>
-		<p>Three in the afternoon</p>
-		<p>Three fifteen</p>
-		<p>Three thirty PM</p>
-		<p>Quarter til four</p>
-		<p>Four in the afternoon</p>
-		<p>Four fifteen</p>
-		<p>Four thirty PM</p>
-		<p>Half past four</p>
-		<p>Five PM</p>
-		<p>Quarter past five</p>
-		<p>Five thirty</p>
-		<p>Five forty five PM</p>
-		<p>Six in the evening</p>
-		<p>Quarter past six</p>
-		<p>Six thirty PM</p>
-		<p>Quarter til seven</p>
-		<p>Seven in the evening</p>
-		<p>Seven fifteen</p>
-		<p>Seven thirty in the evening</p>
-		<p>Seven forty five</p>
-		<p>Eight in the evening</p>
-		<p>Quarter past eight</p>
-		<p>Eight thirty at night</p>
-		<p>Quarter til nine</p>
-		<p>Nine at night</p>
-		<p>Nine fifteen</p>
-		<p>Half past nine</p>
-		<p>Nine forty five</p>
-		<p>Ten in the evening</p>
-		<p>Quarter past ten</p>
-		<p>Ten thirty at night</p>
-		<p>Quarter til eleven</p>
-		<p>Eleven O'Clock</p>
-		<p>Eleven fifteen</p>
-		<p>Half past eleven</p>
-		<p>Eleven forty five</p>
-	</div>
-	</div>
-	</div>
-	<div id="progress"></div>
 
-	
-<script type="text/javascript" src="assets/clock2.js"></script>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/clock2.css">
+  <title>Clock</title>
+</head>
+
+<body>
+
+  <div class="container2">
+    <div class="container">
+      <div id="times">
+        <p data-time="0:0">Midnight</p>
+        <p data-time="0:15">Twelve fifteen</p>
+        <p data-time="0:30">Half past twelve</p>
+        <p data-time="0:45">Quarter til one</p>
+        <p data-time="1:0">One O'Clock</p>
+        <p data-time="1:15">Quarter past one</p>
+        <p data-time="1:30">One thirty in the morning</p>
+        <p data-time="1:45">One forty-five</p>
+        <p data-time="2:0">Two in the morning</p>
+        <p data-time="2:15">Quarter past two</p>
+        <p data-time="2:30">Half past two</p>
+        <p data-time="2:45">Two forty-five</p>
+        <p data-time="3:0">Three in the morning</p>
+        <p data-time="3:15">Three fifteen</p>
+        <p data-time="3:30">Three thirty AM</p>
+        <p data-time="3:45">Quarter til four</p>
+        <p data-time="4:0">Four in the morning</p>
+        <p data-time="4:15">Four fifteen</p>
+        <p data-time="4:30">Four thirty AM</p>
+        <p data-time="4:45">Four forty five in the morning</p>
+        <p data-time="5:0">Five AM</p>
+        <p data-time="5:15">Quarter past five</p>
+        <p data-time="5:30">Five thirty</p>
+        <p data-time="5:45">Five forty five AM</p>
+        <p data-time="6:0">Six in the morning</p>
+        <p data-time="6:15">Six fifteen in the morning</p>
+        <p data-time="6:30">Six thirty AM</p>
+        <p data-time="6:45">Quarter til seven</p>
+        <p data-time="7:0">Seven in the morning</p>
+        <p data-time="7:15">Seven fifteen AM</p>
+        <p data-time="7:30">Seven thirty in the morning</p>
+        <p data-time="7:45">Seven forty five</p>
+        <p data-time="8:0">Eight in the morning</p>
+        <p data-time="8:15">Quarter past eight</p>
+        <p data-time="8:30">Eight thirty AM</p>
+        <p data-time="8:45">Quarter til nine</p>
+        <p data-time="9:0">Nine in the morning</p>
+        <p data-time="9:15">Nine fifteen</p>
+        <p data-time="9:30">Half past nine</p>
+        <p data-time="9:45">Nine forty five</p>
+        <p data-time="10:0">Ten in the morning</p>
+        <p data-time="10:15">Quarter past ten</p>
+        <p data-time="10:30">Half past ten</p>
+        <p data-time="10:45">Quarter til eleven</p>
+        <p data-time="11:0">Eleven in the morning</p>
+        <p data-time="11:15">Eleven fifteen</p>
+        <p data-time="11:30">Half past eleven</p>
+        <p data-time="11:45">Quarter til noon</p>
+        <p data-time="12:0">Twelve O'Clock</p>
+        <p data-time="12:15">Twelve fifteen</p>
+        <p data-time="12:30">Half past twelve</p>
+        <p data-time="12:45">Quarter til one</p>
+        <p data-time="13:0">One O'Clock</p>
+        <p data-time="13:15">Quarter past one</p>
+        <p data-time="13:30">One thirty in the afternoon</p>
+        <p data-time="13:45">Three forty-five</p>
+        <p data-time="14:0">Two in the afternoon</p>
+        <p data-time="14:15">Quarter past two</p>
+        <p data-time="14:30">Half past two</p>
+        <p data-time="14:45">Two forty-five</p>
+        <p data-time="15:0">Three in the afternoon</p>
+        <p data-time="15:15">Three fifteen</p>
+        <p data-time="15:30">Three thirty PM</p>
+        <p data-time="15:45">Quarter til four</p>
+        <p data-time="16:0">Four in the afternoon</p>
+        <p data-time="16:15">Four fifteen</p>
+        <p data-time="16:30">Four thirty PM</p>
+        <p data-time="16:45">Quarter til five</p>
+        <p data-time="17:0">Five PM</p>
+        <p data-time="17:15">Quarter past five</p>
+        <p data-time="17:30">Five thirty</p>
+        <p data-time="17:45">Five forty five PM</p>
+        <p data-time="18:0">Six in the evening</p>
+        <p data-time="18:15">Quarter past six</p>
+        <p data-time="18:30">Six thirty PM</p>
+        <p data-time="18:45">Quarter til seven</p>
+        <p data-time="19:0">Seven in the evening</p>
+        <p data-time="19:15">Seven fifteen</p>
+        <p data-time="19:30">Seven thirty in the evening</p>
+        <p data-time="19:45">Seven forty five</p>
+        <p data-time="20:0">Eight in the evening</p>
+        <p data-time="20:15">Quarter past eight</p>
+        <p data-time="20:30">Eight thirty at night</p>
+        <p data-time="20:45">Quarter til nine</p>
+        <p data-time="21:0">Nine at night</p>
+        <p data-time="21:15">Nine fifteen</p>
+        <p data-time="21:30">Half past nine</p>
+        <p data-time="21:45">Nine forty five</p>
+        <p data-time="22:0">Ten in the evening</p>
+        <p data-time="22:15">Quarter past ten</p>
+        <p data-time="22:30">Ten thirty at night</p>
+        <p data-time="22:45">Quarter til eleven</p>
+        <p data-time="23:0">Eleven O'Clock</p>
+        <p data-time="23:15">Eleven fifteen</p>
+        <p data-time="23:30">Half past eleven</p>
+        <p data-time="23:45">Eleven forty five</p>
+   
+      </div>
+    </div>
+  </div>
+  <div id="progress"></div>
+
+
+  <script type="text/javascript" src="assets/clock2.js"></script>
 </body>
+
 </html>

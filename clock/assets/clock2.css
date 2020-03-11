@@ -1,101 +1,75 @@
-@font-face {
-    font-family:"Happy Times at the IKOB";
-    src:url("happy-times-at-the-ikob.woff2") format("woff2"),url("happy-times-at-the-ikob.woff") format("woff"),url("happy-times-at-the-ikob.otf") format("opentype");
-    font-style:normal;font-weight:400;
-}
-
 body {
-	background-color: white;
-/*	overflow: hidden;*/
-	margin: 0 auto;
-	padding-bottom: 10px;
+  background-color: white;
+  margin: 0 auto;
 
 }
-
-/*#progress position:fixed or absolute, but doesn't push #times up inside as a child or class?
-*/	
-
-
-#progress {
-			width: 200px;
-			background-color: blue;
-			position: absolute;
-			left: 10px;
-			height: 1px;
-			top: 0;
-
-		}
 
 
 .container2 {
-	width: 88vw;
-	background-color: white;
-	height: 13vw;
-	position: relative;
-	margin: 0 auto;
-	margin-top: 20vw;
-	
+  width: 88vw;
+  background-color: white;
+  height: 15.6vw;
+  position: relative;
+  margin: 0 auto;
+
 }
-
-
 
 .container:before {
-	  width: 88vw;
-	  height: 13vw;
-	  border-style: solid;
-	  border-color: black;
-	  border-width: 5px;
-	  margin: 0 auto;
-	  content: '';
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-	  box-shadow: inset 0 0 20px black;
-	  pointer-events: none;
+  width: 88vw;
+  height: 15.6vw;
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 4vw;
+  margin: 0 auto;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 20px black;
+  pointer-events: none;
+    z-index: 10;
+ 
+
 }
 
+.container {
+  clip-path: inset(.1% .1% .1% .1%);
+  clip-path-position: fixed;
+  width: 91vw;
+  position: relative;
+  height: 16.1vw;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 20vw;
 
 
 
-
-.container { 
-	clip-path:inset(1% 1% 1% 1%);
-	clip-path-position: fixed;	
-	width: 91vw;
-	position: relative;
-	height: 13.8vw;
-	margin: 0 auto;
-	overflow: hidden; 
-	
-	}
-
-
-
+}
 
 
 #times {
-	font-family:"Happy Times at the IKOB";
-	text-align: center;
-    position: relative;
-    font-size: 7.8vw;
-    line-height: 4vw;  
-    margin: 0 auto;
-/*	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;*/
-	color: black;
-	z-index: -1;
-
+  font-family: "Happy Times at the IKOB";
+  text-align: center;
+  position: relative;
+  font-size: 7.8vw;
+  line-height: 3.5vw;
+  margin: 0 auto;
+  z-index: -1;
+  /* *New* Opacity ease */
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 
-
-/*.times li { line-height: 50px; width: 100vw;
-			 } */
-
-/*@keyframes slider {
-
-    0%   { transform: translateY(100vh) }
-    100% { transform: translateY(-100%) }
-}*/
-
+#times:hover {
+	font-family: "Happy Times at the IKOB";
+  text-align: center;
+  position: relative;
+  font-size: 7.8vw;
+  color: white;
+  line-height: 3.5vw;
+  margin: 0 auto;
+	-webkit-text-stroke-width: .8px;
+    -webkit-text-stroke-color: black;
+}
