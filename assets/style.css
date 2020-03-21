@@ -97,15 +97,16 @@ top: 10px;
 	font-family: "Alte Haas Grotesk";
 }
 
-li {
+a:hover {
 	list-style-type: none;
 	list-style-position: outside;
+	text-decoration: underline;
+
 
 }
 
 p {
 
-	/*text-decoration: underline;*/
 	font-weight: bold;
 	font-family: Times New Roman;
 	font-weight: normal;
@@ -145,13 +146,6 @@ a:hover { text-decoration: underline; }
 
 
 
-
-
-a:link {
-  text-decoration: none;
-  color: #414141;
-
-}
 
 
 
