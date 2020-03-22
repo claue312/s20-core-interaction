@@ -10,8 +10,6 @@ body {
 	font-family:"Alte Haas Grotesk";
 
 
-
-
 }
 
 
@@ -27,10 +25,6 @@ img:hover{
 
        }
 
-
-div {padding: 2vw;
-padding-top: 6vw;
-}
 
 
 
@@ -66,29 +60,13 @@ top: 10px;
 }
 
 
-
-.pic1 {height: 100px;
-	   width: 100px;
-		padding-left: 1vw;
-	-moz-box-shadow: black;
-    -webkit-box-shadow: black;
-    box-shadow: black;}
-
-#line1, #line2 {
-	border-bottom: solid;
-	border-color: black;
-	border-width: .1vw;
-	margin: 0 auto;
-	width: 90vw;
-
-}
 .studio, .lab {
 	font-size: 3vw;
 	line-height: 3vw;
 	padding-bottom: 5px;
 	font-family: Times New Roman;
-}
 
+}
 
 
 .students, .prof {
@@ -98,9 +76,9 @@ top: 10px;
 }
 
 a:hover {
-	list-style-type: none;
-	list-style-position: outside;
+
 	text-decoration: underline;
+	color: black;
 
 
 }
@@ -108,7 +86,9 @@ a:hover {
 p {
 
 	font-weight: bold;
-	font-family: Times New Roman;
+	font-family: itc-avant-garde-gothic-pro;
+	font-weight: 300;
+	font-style: normal;
 	font-weight: normal;
 	line-height: 1vw;
 
@@ -116,8 +96,9 @@ p {
 }
 
 h1 {
-	font-family: Times New Roman;
-	font-weight: 400;
+font-family: itc-avant-garde-gothic-pro;
+font-weight: 300;
+font-style: normal;
 	text-align: inherit;
 	font-size: 5vw;
 	position: fixed;
@@ -127,22 +108,13 @@ h1 {
 }
 
 h2 {
+	font-family: itc-avant-garde-gothic-pro, sans-serif;
+
 	text-align: inherit;
 	font-weight: normal;
 	font-size: 3vw;
 
 }
-
-
-
-
-
-a {
-	color: black;
-	text-decoration: none;
-}
-
-a:hover { text-decoration: underline; }
 
 
 
