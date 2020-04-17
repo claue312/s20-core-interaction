@@ -17,6 +17,7 @@ $(document).ready(function(){
                divs[j] = tempi;
              }
             for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+            	$('img').draggable()
         });                    
     }
 });
