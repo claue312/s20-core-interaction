@@ -5,33 +5,41 @@
     font-style:normal;font-weight:400;
 }
         
-
-
 body {
 margin: 0 auto;
 }
 
 #button {
 font-family:"TimesNow-ExtraLight";
-
 width: 10vw;
 font-size: 1.2vw;
 margin-top: 2vw;
-left: 87vw;
+left: 89vw;
 position: fixed;
-text-align: right;
+text-align: center;
 opacity: .7;
-
+border-style: solid;
+border-width: .1vw;
+width: 6vw;
+padding: .5vw;
+border-style: solid;
+box-shadow: 5px 10px 5px #888888;
 }
+
 #button2 {
 font-family:"TimesNow-ExtraLight";
-width: 10vw;
 font-size: 1.2vw;
-margin-top: 5vw;
-left: 87vw;
-text-align: right;
+margin-top: 6vw;
+left: 89vw;
+text-align: center;
 position: fixed;
 opacity: .7;
+border-style: solid;
+border-width: .1vw;
+width: 6vw;
+padding: .5vw;
+border-style: solid;
+box-shadow: 5px 10px 5px #888888;
 
 }
 
@@ -40,31 +48,33 @@ transition: 0.3s;
 opacity: 1;
 text-decoration: underline;
 }
-
 .thing { 
 vertical-align: middle;
-  opacity: 1;
-  transition: 0.3s;}
+opacity: 1;
+transition: 0.3s;}
 
 .thing:hover {
-
 opacity: 0.8;
 }
 
 img {
 width: 10vw;
 border-style: solid;
- box-shadow: 5px 10px 5px #888888;
+box-shadow: 5px 10px 5px #888888;
 margin: 1vw;
-
 border-width: .2vw;
 margin: 1.5vw;
-
+cursor: pointer;
 }
 
-.words {width: 33vw;}
+.words {
+width: 33vw;
+position: sticky;
+}
+
 .slate {
 width: 40vw;
 right: 85vw;
+position: sticky;
 
 }
