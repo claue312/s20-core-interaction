@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family:"TimesNow-ExtraLight";
+    src:url("JHA - TimesNow-ExtraLight.woff2") format("woff2"),url("JHA - TimesNow-ExtraLight.woff") format("woff"),url("JHA - TimesNow-ExtraLight.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        .words {
+        	padding-top: 10vw;
+        }
+        
+        #button2,  #button3 {
+				color: #000;
+				text-decoration: none;
+				right: 20vw;
+				position: fixed;
+				left: 70vw;
+				background-color: white;
+				width: 30vw;
+				}
+	
+		#button2:hover, #want:hover {
+				color: #ff5e0d;
+				}
+				 #button3:hover {
+				 	color: #ff5e0d;
+				 }
+		#button2:after {
+				
+				font-size: .8em;
+				right: 20vw;
+
+				}
+			
+			body {
+				font-family:"TimesNow-ExtraLight";
+				font-size: 32pt;
+				line-height: 1.1em;
+
+				
+			}  
+			
+			h1 {
+				margin-top: 10vw;
+				font-family:"TimesNow-ExtraLight";
+				font-weight: normal;
+				font-size: 3vw;
+				line-height: 1em;
+				max-width: 800pt;
+				margin: 0 auto;
+				text-align: center;
+				position: fixed;
+				background-color: white;
+			}	
+			
+			h2 {
+				padding-top: 10vw;
+				font-weight: 100;
+				line-height: 5vw;
+
+			}
+
+
+		 ::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+  color: white;
+}
+			
+			@media only screen and (max-width: 790px) {	
+				body {
+					font-size: 28pt;
+				}
+			}
+
+			@media only screen and (max-width: 630px) {	
+				body {
+					font-size: 22pt;
+				}
+				
+				ol {
+					padding-left: 30px;
+					max-width: 90%;					
+				}
+			}
+
+			@media only screen and (max-width: 495px) {	
+				body {
+					font-size: 18pt;
+				}
+			}
+			
+			@media only screen and (max-width: 420px) {	
+				body {
+					font-size: 14pt;
+				}
+			}

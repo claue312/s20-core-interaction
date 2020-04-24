@@ -13,7 +13,7 @@ margin: 0 auto;
 font-family:"TimesNow-ExtraLight";
 width: 10vw;
 font-size: 1.2vw;
-margin-top: 2vw;
+margin-top: vw;
 left: 89vw;
 position: fixed;
 text-align: center;
@@ -29,7 +29,7 @@ box-shadow: 5px 10px 5px #888888;
 #button2 {
 font-family:"TimesNow-ExtraLight";
 font-size: 1.2vw;
-margin-top: 6vw;
+margin-top: 3vw;
 left: 89vw;
 text-align: center;
 position: fixed;
@@ -59,6 +59,7 @@ opacity: 0.8;
 
 img {
 width: 10vw;
+transition-delay: 2s;
 border-style: solid;
 box-shadow: 5px 10px 5px #888888;
 margin: 1vw;
@@ -77,4 +78,16 @@ width: 40vw;
 right: 85vw;
 position: sticky;
 
+}
+#accordion {
+margin: 1vw;
+right: 85vw;
+width: 5vw;
+text-align: right;
+font-family:"TimesNow-ExtraLight";
+ }
+
+
+h3 {
+text-align: right;
 }

@@ -41,4 +41,5 @@ let changeTime = () => {
 
 // Run above on page load
 changeTime();
-setInterval(changeTime, 10000);
+setInterval(changeTime, 1000);
+

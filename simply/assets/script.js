@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#button2").bind('click', shuffle);        
     function shuffle(){
         $(".words").each(function(){
-            var divs = $(this).find('img');
+            var divs = $(this).find('div');
             for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
             var i = divs.length;
             if ( i == 0 ) return false;
@@ -17,14 +17,9 @@ $(document).ready(function(){
                divs[j] = tempi;
              }
             for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
-            	$('img').draggable()
+              $('img').draggable()
         });                    
     }
 
 
     });
-
-
-// $( function() {
-//     $( "#accordion" ).accordion();
-//   } );
