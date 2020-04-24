@@ -18,12 +18,11 @@ $(document).ready(function(){
              }
             for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
             	$('img').draggable()
-        });                    
+        });   
+    
+            
     }
-
-
-    });
-
+     });
 
 // $( function() {
 //     $( "#accordion" ).accordion();
