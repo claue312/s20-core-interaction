@@ -12,11 +12,14 @@
 
         
 body {
-margin: 0 auto;
+margin: auto 0;
+overflow: hidden;
+background-color: inherit;
+
 }
 
 
-#button2 {
+/*#button2 {
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
 font-size: 2vw;
@@ -37,19 +40,12 @@ box-shadow: 5px 10px 5px #888888;
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
 
-}
+}*/
 
-#button2:hover {
-transition: 0.3s;
-opacity: 1;
-text-decoration: underline;
-}
 
 .thing { 
-width: 18vw;
 vertical-align: middle;
 opacity: 1;
-margin-bottom: 13vw;
 border-width: .2vw;
 border-style: solid;
 transition: opacity 2s;
@@ -57,42 +53,45 @@ box-shadow: 5px 10px 5px #888888;
 transition: 0.3s;
 }
 
-.thing:hover {
-opacity: 0.8;
-background-color: black;
-transform: scale(1.2);
-
-}
 
 
 
 
 .words {
-width: 100%;
-align-items: baseline;
+/*align-items: baseline;*/
 position: relative;
 overflow-x: scroll;
-top: 10vw;
 white-space: nowrap;
+z-index: 10;
+align-items: baseline;
 }
 
+#word2 {
+margin-bottom: 2vw;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+ vertical-align: bottom;
 
-.slate {
-width: 50vw;
-top: 0vw;
-position: fixed;
-border-style: solid;
-border-width: .1vw;
-z-index: 0;
+
 }
 
+#word1 {
+position: relative;
+overflow-x: scroll;
+white-space: nowrap;
+z-index: 10;
+ vertical-align: top;
+
+
+}
 img {
-width: 10vw;
+width: 19vw;
 transition-delay: 2s;
 border-style: solid;
-margin: 1vw;
 margin: 1.5vw;
 cursor: pointer;
+box-shadow: 5px 10px 5px #888888;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -130,37 +129,32 @@ cursor: pointer;
     to   { opacity: 1; }
 }
 
+/* width */
 ::-webkit-scrollbar {
-  width: 10vw;
-  
+  width: 80vw;
+  margin: 2vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
   border-style: solid;
-  border-width: .1vw; 
-  border-color: black;
-  margin: 2vw; 
-  transition: fadein;
-}
+  border-width: .1vw;
+  border-color: red;
+  margin: 2vw;
+  background-color: white;
 
-/* Track */
-::-webkit-scrollbar-track:hover {
-  background: white;
-  margin: 2vw; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-   border-style: solid;
-  background: white;
-  border-width: .1vw; 
-
+  background: red; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white;
+  background: white; 
   border-style: dashed;
   border-width: .1vw;
+  border-color: red;
 }

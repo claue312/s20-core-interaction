@@ -6,7 +6,7 @@
     font-style:normal;font-weight:400;
 }
 body {
-	background-color: white;
+	background-color: red;
 	font-family:"Alte Haas Grotesk";
 
 
@@ -96,7 +96,7 @@ p {
 }
 
 h1 {
-font-family: itc-avant-garde-gothic-pro;
+font-family: 
 font-weight: 300;
 font-style: normal;
 	text-align: inherit;
@@ -107,14 +107,6 @@ font-style: normal;
 
 }
 
-h2 {
-	font-family: itc-avant-garde-gothic-pro, sans-serif;
-
-	text-align: inherit;
-	font-weight: normal;
-	font-size: 3vw;
-
-}
 
 
 

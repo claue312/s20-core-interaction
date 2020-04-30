@@ -25,7 +25,7 @@ let changeTime = () => {
     hours = d.getHours(),
     minutes = d.getMinutes();
 
-  // Round time to 15 minutes using changeTime
+
   let roundedTime = roundTime(hours, minutes, 15)
 
   let currentTime = document.querySelectorAll("[data-time='" + roundedTime + "']")[0]
@@ -42,4 +42,5 @@ let changeTime = () => {
 // Run above on page load
 changeTime();
 setInterval(changeTime, 1000);
+
 
