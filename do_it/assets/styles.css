@@ -160,3 +160,14 @@ box-shadow: 5px 10px 5px #888888;
   border-width: .1vw;
   border-color: red;
 }
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    background-color: blue;
+  }
+
+   img {width: 50vw;}
+
+  }
+}
