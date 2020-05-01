@@ -19,20 +19,28 @@ background-color: inherit;
 }
 
 
-
+#button2:hover{
+border-style: dashed;
+background-color: white;
+border-width: .1vw;
+color: black;
+}
 
 #button2 {
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
-font-size: 2vw;
-margin-top: 3vw;
-left: 86vw;
+font-size: 1.5vw;
+left: 90vw;
+top: 1vw;
+background-color: black;
+color: white;
 text-align: center;
 position: fixed;
 opacity: .7;
 border-style: solid;
 border-width: .1vw;
-width: 10vw;
+width: 3vw;
+cursor: pointer;
 padding: .5vw; }
 /*border-style: solid;
 box-shadow: 5px 10px 5px #888888;
@@ -46,13 +54,13 @@ box-shadow: 5px 10px 5px #888888;
 
 
 .thing { 
-vertical-align: middle;
 opacity: 1;
 border-width: .2vw;
 border-style: solid;
 transition: opacity 2s;
 box-shadow: 5px 10px 5px #888888;
 transition: 0.3s;
+
 }
 
 
@@ -60,40 +68,32 @@ transition: 0.3s;
 
 
 .words {
-/*align-items: baseline;*/
-position: relative;
 overflow-x: scroll;
-white-space: nowrap;
-z-index: 10;
-align-items: baseline;
 }
 
 #word2 {
-margin-bottom: 2vw;
-  position: relative;
   overflow-x: scroll;
   white-space: nowrap;
- vertical-align: bottom;
 
 
 }
 
 #word1 {
-position: relative;
+vertical-align: middle;
 overflow-x: scroll;
 white-space: nowrap;
-z-index: 10;
- vertical-align: top;
-
 
 }
+
+
 img {
-width: 19vw;
+width: 15vw;
 transition-delay: 2s;
 border-style: solid;
-margin: 1.5vw;
+position: relative;
+margin-left: 5vw;
 cursor: pointer;
-box-shadow: 5px 10px 5px #888888;
+/*box-shadow: 5px 10px 5px #888888;*/
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -134,7 +134,7 @@ box-shadow: 5px 10px 5px #888888;
 /* width */
 ::-webkit-scrollbar {
   width: 80vw;
-  margin: 2vw;
+
 }
 
 /* Track */
@@ -142,15 +142,15 @@ box-shadow: 5px 10px 5px #888888;
   background: #f1f1f1; 
   border-style: solid;
   border-width: .1vw;
-  border-color: red;
-  margin: 2vw;
+  border-color: black;opacity: .1;
   background-color: white;
 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: black;
+
 }
 
 /* Handle on hover */
@@ -158,13 +158,13 @@ box-shadow: 5px 10px 5px #888888;
   background: white; 
   border-style: dashed;
   border-width: .1vw;
-  border-color: red;
+  border-color: black;
 }
 
 @media screen and (max-width: 768px) {
   
   body {
-    background-color: blue;
+    background-color: inherit;
   }
 
    img {width: 50vw;}
