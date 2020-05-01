@@ -27,10 +27,6 @@ color: black;
 }
 
 #button2 {
-
-   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(300px);
-  scroll-snap-type: y mandatory;
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
 font-size: 1.5vw;
@@ -40,7 +36,6 @@ background-color: black;
 color: white;
 text-align: center;
 position: fixed;
-opacity: .7;
 border-style: solid;
 border-width: .1vw;
 width: 3vw;

@@ -12,7 +12,7 @@
 
         
 body {
-margin:0 auto;
+margin:0 auto;">
 overflow-y: hidden;
 
             
@@ -32,7 +32,29 @@ box-shadow: 0px 0px 18px 18px white;}
 
 }
 
-#button1, #button2, #button3 {
+
+#button3 {
+ margin: 2vw;
+font-family:"TimesNow-ExtraLight";
+font-weight:400;
+font-size: 2vw;
+left: 76vw;
+text-align: center;
+position: relative;
+opacity: .7;
+border-style: solid;
+border-width: .1vw;
+width: 10vw;
+padding: .5vw;
+box-shadow: 5px 10px 5px #888888;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+
+}
+#button1 {
 margin: 2vw;
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
@@ -43,28 +65,47 @@ border-style: solid;
 border-width: .1vw;
 width: 6vw;
 position: relative;
+display: inline-block;
 padding: .4vw;
+/*border-style: solid;*/
+box-shadow: 5px 10px 5px #888888;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
+
+}
+#button2 {
+font-family:"TimesNow-ExtraLight";
+font-weight:400;
+font-size: 1.5vw;
+text-align: center;
+bottom: 1vw;
+border-style: solid;
+border-width: .1vw;
+width: 6vw;
+display: inline-block;
+position: relative;
+margin: 2vw;
+padding: .4vw;
+/*border-style: solid;*/
+/*box-shadow: 5px 10px 5px #888888;*/
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+
 }
 
-#button2:hover, #button1:hover, #button3:hover {
+#button2:hover, #button1:hover {
 transition: 0.3s;
 opacity: 1;
+text-decoration: underline;
 border-style: dashed;
 border-radius: 3px 3px;
 }
-
-#button2:active, #button3:active, #button1:active {
-border-style: solid;
-border-radius: 3px 3px;
-text-transform: uppercase;
-}
-
-
 
 .thing { 
 width: 30vw;
@@ -96,6 +137,16 @@ overflow-x: scroll;
 white-space: nowrap;
 
 }
+
+
+/*.slate {
+width: 50vw;
+top: 0vw;
+position: fixed;
+border-style: solid;
+border-width: .1vw;
+z-index: 0;
+}*/
 
 img {
 z-index: -1;

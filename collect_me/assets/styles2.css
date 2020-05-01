@@ -12,25 +12,21 @@
 
         
 body {
-margin:0 auto;
-overflow-y: hidden;
-
-            
+margin: 0 auto;
+overflow: hidden;
 }
 .container {
-box-shadow: inset 0px 0px 18px 18px white;
+box-shadow: inset 0px 0px 25px 25px white;
 z-index: 20;
+
 }
-.container2 {
-box-shadow: 0px 0px 18px 18px white;}
 
 .buttons {
   display: flex;
   justify-content: center;
-  margin: 1.5vw;
-
-
+  margin: 1vw;
 }
+
 
 #button1, #button2, #button3 {
 margin: 2vw;
@@ -50,6 +46,7 @@ padding: .4vw;
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
 }
+
 
 #button2:hover, #button1:hover, #button3:hover {
 transition: 0.3s;
@@ -74,9 +71,19 @@ margin-bottom: 13vw;
 border-width: .2vw;
 border-style: solid;
 transition: opacity 2s;
-box-shadow: 5px 10px 5px #888888;
 transition: 0.3s;
 
+}
+
+.thing { 
+width: 14vw;
+vertical-align: middle;
+opacity: 1;
+margin-bottom: 30vw;
+border-width: .2vw;
+border-style: solid;
+transition: opacity 2s;
+transition: 0.3s;
 }
 
 .thing:hover {
@@ -90,19 +97,22 @@ transform: scale(1.2);
 
 
 .words {
+width: 100%;
 align-items: baseline;
 position: relative;
 overflow-x: scroll;
 white-space: nowrap;
-
 }
 
+
+
 img {
+max-height: 10vw;
 z-index: -1;
-max-height: 15vw;
+box-shadow: 5px 10px 5px #888888;
 transition-delay: 2s;
 border-style: solid;
-margin: 8vw;
+margin: 2vw;
 cursor: pointer;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -140,6 +150,7 @@ cursor: pointer;
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
 
 ::-webkit-scrollbar {
   width: 10vw;
