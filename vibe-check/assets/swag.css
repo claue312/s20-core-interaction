@@ -1,0 +1,48 @@
+@font-face {
+    font-family:"MillionaireTrial Script";
+    src:url("MillionaireTrial-Script.woff2") format("woff2"),url("MillionaireTrial-Script.woff") format("woff"),url("MillionaireTrial-Script.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"TimesNow-ExtraLight";
+    src:url("JHA - TimesNow-ExtraLight.woff2") format("woff2"),url("JHA - TimesNow-ExtraLight.woff") format("woff"),url("JHA - TimesNow-ExtraLight.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+        
+
+
+body {
+	margin: 2vw;
+
+}
+
+ul {
+	display: inline;
+}
+
+.studio, .lab, h1 {
+	
+	font-family:"TimesNow-ExtraLight";
+	font-size: 3vw;
+	font-weight: 400;
+	padding-top: 5vw;
+}
+
+}
+.button{
+	border: 2px solid black;
+	justify-content: center;
+	cursor: pointer;
+
+}
+
+
+.words {
+	font-family:"TimesNow-ExtraLight";
+	font-size: 3vw;
+	color: black;
+	display: inline;
+	padding-top: 5vw;
+	width: 10vw;
+}

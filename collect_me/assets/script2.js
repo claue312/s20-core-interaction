@@ -1,5 +1,6 @@
-$(document).ready(function() { 
-$('img').draggable();});
+$(function(){
+  $( "#thing" ).draggable();
+});
 
 $(document).ready(function(){
     $("#button2").bind('click', shuffle);        

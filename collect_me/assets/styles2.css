@@ -10,7 +10,8 @@
     font-style:normal;font-weight:400;
 }
 
-        
+
+
 body {
 margin: 0 auto;
 overflow: hidden;
@@ -62,20 +63,7 @@ text-transform: uppercase;
 }
 
 
-
-.thing { 
-width: 30vw;
-vertical-align: middle;
-opacity: 1;
-margin-bottom: 13vw;
-border-width: .2vw;
-border-style: solid;
-transition: opacity 2s;
-transition: 0.3s;
-
-}
-
-.thing { 
+#thing { 
 width: 14vw;
 vertical-align: middle;
 opacity: 1;
@@ -84,9 +72,11 @@ border-width: .2vw;
 border-style: solid;
 transition: opacity 2s;
 transition: 0.3s;
+
+
 }
 
-.thing:hover {
+#thing:hover {
 opacity: 0.8;
 background-color: black;
 transform: scale(1.2);
@@ -107,6 +97,7 @@ white-space: nowrap;
 
 
 img {
+
 max-height: 10vw;
 z-index: -1;
 box-shadow: 5px 10px 5px #888888;

@@ -41,8 +41,10 @@ padding-bottom: 2vw;
  }
 
 
-#wrapper {position:relative;
-display: inline-block;
+#wrapper {
+position:relative;
+display: inline;
+width: 2vw;
 }
 
 #wrapper:hover .text {
@@ -63,7 +65,9 @@ top: 10px;
 .studio, .lab {
 	font-size: 3vw;
 	line-height: 3vw;
+	width: 40vw;
 	padding-bottom: 5px;
+	display: flex;
 	font-family: Times New Roman;
 
 }
