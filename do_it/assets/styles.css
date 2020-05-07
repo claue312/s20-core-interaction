@@ -11,13 +11,20 @@
 }
 
 body {
-margin: auto 0;
+margin: 1.5vw;
 overflow: hidden;
-background-color: inherit;
-padding: 3vw;
+background-color: red;
+
 
 }
-
+/*
+.container {
+  border-style: solid;
+  color: black;
+  box-shadow: 5px 10px 5px #888888;
+  background-color: white;
+  margin: 3vw;
+}*/
 
 #button2:hover{
 border-style: dashed;
@@ -86,12 +93,12 @@ white-space: nowrap;
 
 
 img {
-width: 15vw;
+width: 13vw;
 transition-delay: 2s;
 border-style: solid;
 position: relative;
-margin-left: 9vw;
-margin-right: 9vw;
+margin: 3vw;
+
 cursor: pointer;
 /*box-shadow: 5px 10px 5px #888888;*/
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */

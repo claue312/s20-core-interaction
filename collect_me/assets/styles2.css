@@ -14,13 +14,17 @@
 
 body {
 margin: 0 auto;
-overflow: hidden;
-}
-.container {
-box-shadow: inset 0px 0px 25px 25px white;
-z-index: 20;
 
 }
+
+
+.container {
+box-shadow: inset 0px 0px 25px 25px white;
+z-index: 1;
+}
+
+
+
 
 .buttons {
   display: flex;
@@ -29,7 +33,7 @@ z-index: 20;
 }
 
 
-#button1, #button2, #button3 {
+#button2, #button1 {
 margin: 2vw;
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
@@ -49,59 +53,33 @@ padding: .4vw;
 }
 
 
-#button2:hover, #button1:hover, #button3:hover {
+#button2:hover, #button1:hover  {
 transition: 0.3s;
 opacity: 1;
 border-style: dashed;
 border-radius: 3px 3px;
-}
 
-#button2:active, #button3:active, #button1:active {
-border-style: solid;
-border-radius: 3px 3px;
-text-transform: uppercase;
 }
 
 
-#thing { 
-width: 14vw;
+
+.thing { 
 vertical-align: middle;
-opacity: 1;
-margin-bottom: 30vw;
 border-width: .2vw;
-border-style: solid;
 transition: opacity 2s;
 transition: 0.3s;
-
-
-}
-
-#thing:hover {
-opacity: 0.8;
-background-color: black;
-transform: scale(1.2);
-
+display: inline-block;
+z-index: -1;
 }
 
 
-
-
-.words {
-width: 100%;
-align-items: baseline;
-position: relative;
-overflow-x: scroll;
-white-space: nowrap;
-}
 
 
 
 img {
-
-max-height: 10vw;
+width: 15vw;
 z-index: -1;
 box-shadow: 5px 10px 5px #888888;
-transition-delay: 2s;
 border-style: solid;
 margin: 2vw;
 cursor: pointer;
