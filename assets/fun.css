@@ -12,7 +12,7 @@
 
 body {
   margin: 2vw;
-  width: 100vw;
+  width: 95vw;
 
 
 }
@@ -70,6 +70,12 @@ color: #339C5F;
 text-align: left;
 margin-left: 3vw;
 font-size: 5vw;
+z-index: -1;
+      -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 3s; /* Firefox < 16 */
+          -ms-animation: fadein 3s; /* Internet Explorer */
+           -o-animation: fadein 3s; /* Opera < 12.1 */
+              animation: fadein 3s;
 
 }
 
@@ -203,11 +209,11 @@ line-height: 13vw;
 top: -1vw;
 position: fixed;
 z-index: -1;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+      -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 3s; /* Firefox < 16 */
+          -ms-animation: fadein 3s; /* Internet Explorer */
+           -o-animation: fadein 3s; /* Opera < 12.1 */
+              animation: fadein 3s;
 }
 
 #about {
