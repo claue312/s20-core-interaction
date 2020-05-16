@@ -9,31 +9,13 @@
     src:url("Essays-1743-Bold-Italic.woff2") format("woff2"),url("Essays-1743-Bold-Italic.woff") format("woff"),url("Essays-1743-Bold-Italic.otf") format("opentype");
     font-style:normal;font-weight:400;
 }
-
-
-
+        
 body {
-margin: 0 auto;
-
+margin-bottom: 5vw; 
+          
 }
 
-
-.container {
-box-shadow: inset 0px 0px 25px 25px white;
-z-index: 1;
-}
-
-
-
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin: 1vw;
-}
-
-
-#button2, #button1 {
+#button2 { 
 margin: 2vw;
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
@@ -44,44 +26,64 @@ border-style: solid;
 border-width: .1vw;
 width: 6vw;
 position: relative;
-padding: .4vw;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+padding: .4vw;}
+
+*{margin:0; padding:0;}
+#display{
+  height:60px;
+  max-width: 100%;
+  overflow:hidden;
+  position:relative;
 }
-
-
-#button2:hover, #button1:hover  {
-transition: 0.3s;
-opacity: 1;
-border-style: dashed;
-border-radius: 3px 3px;
-
-}
-
-
-
-.thing { 
-vertical-align: middle;
-border-width: .2vw;
-transition: opacity 2s;
-transition: 0.3s;
-display: inline-block;
-z-index: -1;
+#text{
+  font-family:"Essays 1743 Bold Italic";
+  cursor:pointer;
+  overflow:hidden;
+  position:absolute;
+  left:10px;
+  margin-right:10px;
+  top:10px;
 }
 
 
 
 
+
+.lol {
+  width: 100%
+  height: 33%;
+}
+
+.container {
+
+box-shadow: inset 0px 0px 18px 18px white;
+
+}
+
+
+.ok {
+  margin-bottom: 15vw;
+  display: inline;
+
+
+  }
+.words {
+
+ align-items: baseline;
+position: relative;
+overflow-x: scroll;
+white-space: nowrap;
+width: 100%;
+padding-bottom: 15vw;
+}
 
 img {
+
 width: 15vw;
-z-index: -1;
-box-shadow: 5px 10px 5px #888888;
+max-height: 15vw;
+transition-delay: 2s;
 border-style: solid;
-margin: 2vw;
+margin: 1vw;
 cursor: pointer;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -119,7 +121,6 @@ cursor: pointer;
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 
 ::-webkit-scrollbar {
   width: 10vw;

@@ -1,46 +1,70 @@
-  $( function() {
-    $( ".thing" ).draggable();
+ $( function() {
+    $( ".ok" ).draggable();
   } );
+ function marquee(a, b) {
+    var width = b.width();
+    var start_pos = a.width();
+    var end_pos = -width;
 
-// filterSelection("all")
-// function filterSelection(c) {
-//   var x, i;
-//   x = document.getElementsByClassName("filterDiv");
-//   if (c == "all") c = "";
-//   for (i = 0; i < x.length; i++) {
-//     w3RemoveClass(x[i], "show");
-//     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-//   }
-// }
+    function scroll() {
+        if (b.position().left <= -width) {
+            b.css('left', start_pos);
+            scroll();
+        }
+        else {
+            time = (parseInt(b.position().left, 10) - end_pos) *
+                (20000 / (start_pos - end_pos)); // Increase or decrease speed by changing value 10000
+            b.animate({
+                'left': -width
+            }, time, 'linear', function() {
+                scroll();
+            });
+        }
+    }
 
-// function w3AddClass(element, name) {
-//   var i, arr1, arr2;
-//   arr1 = element.className.split(" ");
-//   arr2 = name.split(" ");
-//   for (i = 0; i < arr2.length; i++) {
-//     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-//   }
-// }
+    b.css({
+        'width': width,
+        'left': start_pos
+    });
+    scroll(a, b);
+    
+    b.mouseenter(function() {     // Remove these lines
+        b.stop();                 //
+        b.clearQueue();           // if you don't want
+    });                           //
+    b.mouseleave(function() {     // marquee to pause
+        scroll(a, b);             //
+    });                           // on mouse over
+    
+}
 
-// function w3RemoveClass(element, name) {
-//   var i, arr1, arr2;
-//   arr1 = element.className.split(" ");
-//   arr2 = name.split(" ");
-//   for (i = 0; i < arr2.length; i++) {
-//     while (arr1.indexOf(arr2[i]) > -1) {
-//       arr1.splice(arr1.indexOf(arr2[i]), 1);     
-//     }
-//   }
-//   element.className = arr1.join(" ");
-// }
+$(document).ready(function() {
+    marquee($('#display'), $('#text'));  //Enter name of container element & marquee element
+});
 
-// // Add active class to the current button (highlight it)
-// var btnContainer = document.getElementById("myBtnContainer");
-// var btns = btnContainer.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function(){
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+$(function(){
+  $( "#thing" ).draggable();
+});
+
+$(document).ready(function(){
+    $("#button2").bind('click', shuffle);        
+    function shuffle(){
+        $(".words").each(function(){
+            var divs = $(this).find('img');
+            for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
+            var i = divs.length;
+            if ( i == 0 ) return false;
+            while ( --i ) {
+               var j = Math.floor( Math.random() * ( i + 1 ) );
+               var tempi = divs[i];
+               var tempj = divs[j];
+               divs[i] = tempj;
+               divs[j] = tempi;
+             }
+            for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+              $('img').draggable()
+        });   
+    
+            
+    }
+     });
