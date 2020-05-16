@@ -14,8 +14,49 @@ body {
   margin: 2vw;
   width: 100vw;
 
+
 }
 
+#pink {
+position: absolute;
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-family:"Alte Haas Grotesk";
+  font-weight: 400;
+  font-size: 1.5vw;
+  width: auto;
+  padding: 2px 10px 2px 10px;
+  color: black;
+  border-radius: 4vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+  right: 5vw;
+  bottom: 3vw;
+  position: fixed;
+
+}
+
+
+#pink:hover {
+  box-shadow: inset 0px 0px 15px pink;
+}
+
+.dark-mode {
+  background-color: pink;
+  color: white;
+
+   }
+
+span:hover {
+   background-color: white;
+  color: black;
+  border-width: 1px;
+  box-shadow: inset 0 0 3px black;
+}
 
 
 /* SUBHEADINGS: STUDIO, LAB, CLASS, INSTRUCTORS, ABOUT */
@@ -25,7 +66,7 @@ h2 {
 font-family:"Alte Haas Grotesk";
 font-weight: 300;
 -webkit-text-stroke: 1.25px black;
-color: pink;
+color: #339C5F;
 text-align: left;
 margin-left: 3vw;
 font-size: 5vw;
@@ -49,7 +90,7 @@ ul#class li {
 li a { 
 
   display: inline-block;
-  line-height: 5vw;
+  line-height: 6vw;
   display: inline;
   font-family:"TimesNow-ExtraLight";
   font-size: 3vw;
@@ -59,13 +100,20 @@ li a {
   color: black;
   border-radius: 4vw;
   border-style: solid;
-  border-width: .5px;
+  border-width: 1px;
   border-color: black;
   background-color: white;
  }
 
 
+li a:hover {
+  padding: 2px 10px 2px 10px;
+  background-color: white;
+  color: black;
+  border-width: 1px;
+  box-shadow: inset 0 0 3px black;
 
+}
 
 
 /* PROF SECTION */
@@ -84,9 +132,10 @@ a span {
   font-size: 1.5vw;
   width: auto;
   padding: 2px 10px 2px 10px;
+  color: black;
   border-radius: 4vw;
   border-style: solid;
-  border-width: .5px;
+  border-width: 1px;
   border-color: black;
   background-color: white;
 }
@@ -115,7 +164,7 @@ align-content: center;
   position: fixed;
   font-family:"Alte Haas Grotesk";
   border-color: black;
-  box-shadow: inset 0 0 2px black;
+  box-shadow: inset 0 0 1px black;
   border-style: solid;
   background-color: white;
   color: black;
@@ -157,14 +206,23 @@ z-index: -1;
 }
 
 #about {
-  font-family:"TimesNow-ExtraLight";
-  border-color: black;
-  font-size: 3vw;
   margin: 3vw;
+  color: black;
+  display: inline-block;
+  line-height: 6vw;
+  display: inline;
+  font-family:"TimesNow-ExtraLight";
+  font-size: 3vw;
+  text-decoration: none;
+  padding: 0px 1px 18px 1px;
+  border-radius: 4vw;
+  background-color: white;
 
 }
 
-#contain {
+
+
+/*#contain {
   top: 0px;
   box-shadow: inset 1px 35px 30px 0px white;
   z-index: 1;
@@ -173,7 +231,7 @@ z-index: -1;
   position: fixed;
   margin: 0 auto;
 
-}
+}*/
 
 /* to display all image classes in line: */
 
