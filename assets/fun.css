@@ -138,6 +138,11 @@ a span {
   border-width: 1px;
   border-color: black;
   background-color: white;
+    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s; /* Firefox < 16 */
+        -ms-animation: fadein 6s; /* Internet Explorer */
+         -o-animation: fadein 6s; /* Opera < 12.1 */
+            animation: fadein 6s;
 }
 
 
@@ -212,11 +217,10 @@ z-index: -1;
   line-height: 6vw;
   display: inline;
   font-family:"TimesNow-ExtraLight";
-  font-size: 3vw;
+  font-size: 1.5vw;
   text-decoration: none;
-  padding: 0px 1px 18px 1px;
   border-radius: 4vw;
-  background-color: white;
+
 
 }
 
