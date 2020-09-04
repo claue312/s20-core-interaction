@@ -13,32 +13,42 @@
 body {
 margin: 1.5vw;
 overflow: hidden;
-background-color: red;
-
+background-color: #00A639;
+cursor: crosshair;
 
 }
-/*
-.container {
-  border-style: solid;
-  color: black;
-  box-shadow: 5px 10px 5px #888888;
-  background-color: white;
-  margin: 3vw;
-}*/
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+
+  transition: transform .1s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
 
 #button2:hover{
 border-style: dashed;
 background-color: white;
-border-width: .1vw;
+border-width: 25%;
 color: black;
+cursor: crosshair;
 }
 
 #button2 {
 font-family:"TimesNow-ExtraLight";
 font-weight:400;
 font-size: 1.5vw;
-left: 90vw;
+right: 2vw;
 bottom: 2vw;
+border-radius: 7px 7px 7px 7px;
 background-color: black;
 color: white;
 text-align: center;
@@ -66,30 +76,40 @@ border-style: solid;
 transition: opacity 2s;
 box-shadow: 5px 10px 5px #888888;
 transition: 0.3s;
-
+cursor: pointer;
 }
 
-
+img.vibe {
+  vertical-align: top;
+}
 
 
 
 .words {
 overflow-x: scroll;
-}
-
-#word2 {
-  overflow-x: scroll;
-  white-space: nowrap;
-
 
 }
+
 
 #word1 {
 vertical-align: middle;
 overflow-x: scroll;
 white-space: nowrap;
+margin-top: -3vw;
+
 
 }
+
+#word2 {
+  overflow-x: scroll;
+  white-space: nowrap;
+  vertical-align: baseline;
+  margin-top: 2vw;
+
+
+
+}
+
 
 
 img {
@@ -98,8 +118,8 @@ transition-delay: 2s;
 border-style: solid;
 position: relative;
 margin: 3vw;
-
-cursor: pointer;
+border-radius: 7px 7px 7px 7px;
+cursor: crosshair;
 /*box-shadow: 5px 10px 5px #888888;*/
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -141,6 +161,7 @@ cursor: pointer;
 /* width */
 ::-webkit-scrollbar {
   width: 80vw;
+   height: 20px;
 
 
 }
@@ -159,14 +180,27 @@ padding: 9vw;
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black;
+  /*background: #00A639;
+ border-style: solid;
+  border-width: .2vw;
+  border-color: black;
+   border-radius: 7px 7px 7px 7px;*/
+     background: black; 
+  border-style: dashed;
+  border-width: .2vw;
+  border-color: black;
+  border-radius: 7px 7px 7px 7px;
+
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white; 
-  border-style: dashed;
-  border-width: .1vw;
-  border-color: black;
+
+    background: #00A639;
+ border-style: solid;
+  border-width: .2vw;
+  border-color: white;
+   border-radius: 7px 7px 7px 7px;
+
 }
