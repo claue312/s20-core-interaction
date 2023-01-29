@@ -43,11 +43,11 @@ position: absolute;
 
 
 #pink:hover {
-  box-shadow: inset 0px 0px 15px #EB7EAC;
+  box-shadow: inset 0px 0px 15px pink;
 }
 
 .dark-mode {
-  background-color: #EB7EAC;
+  background-color: pink;
   color: white;
 
    }
