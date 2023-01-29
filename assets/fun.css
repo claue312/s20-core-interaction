@@ -13,6 +13,7 @@
 body {
   margin: 2vw;
   width: 95vw;
+  cursor: crosshair;
 
 
 }
@@ -42,7 +43,7 @@ position: absolute;
 
 
 #pink:hover {
-  box-shadow: inset 0px 0px 15px pink;
+  box-shadow: inset 0px 0px 15px #EB7EAC;
 }
 
 .dark-mode {
