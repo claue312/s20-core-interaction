@@ -52,12 +52,6 @@ position: absolute;
 
    }
 
-#pink + .hide 
-{ display: block;
-  color: red;
-
-}
-
 span:hover {
    background-color: white;
   color: black;
